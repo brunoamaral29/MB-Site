@@ -7,10 +7,8 @@
     <meta name="keywords" content="corretora de seguros, cotar seguro auto, seguro de vida, seguro residencial, seguro empresarial, cotação de seguros, seguros perto de mim, porto seguro, allianz, sulamerica">
     <title>MB Corretora de Seguros | Corretora de Seguros Confiável | Cotação Online Grátis</title>
     
-    <!-- Favicon - Escudo profissional relacionado a seguros -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+    <!-- Favicon inline (para deploy simples) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%230F172A'/%3E%3Cpath d='M16 3 L26 7 L26 16 Q26 23 16 28 Q6 23 6 16 L6 7 Z' fill='%231E40AF'/%3E%3Cpath d='M16 5 L24 8.5 L24 15.5 Q24 21 16 25.5 Q8 21 8 15.5 L8 8.5 Z' fill='%233B82F6'/%3E%3Ctext x='16' y='20' font-family='sans-serif' font-size='11' font-weight='700' fill='white' text-anchor='middle' dominant-baseline='middle'%3EMB%3C/text%3E%3C/svg%3E">
     
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -272,9 +270,9 @@
                 
                 <div class="flex items-center gap-x-6 mt-8">
                     <div class="flex -space-x-2">
-                        <img class="w-8 h-8 rounded-full border-2 border-white ring-1 ring-slate-200" src="https://picsum.photos/id/1005/32/32" alt="Cliente 1">
-                        <img class="w-8 h-8 rounded-full border-2 border-white ring-1 ring-slate-200" src="https://picsum.photos/id/1011/32/32" alt="Cliente 2">
-                        <img class="w-8 h-8 rounded-full border-2 border-white ring-1 ring-slate-200" src="https://picsum.photos/id/1009/32/32" alt="Cliente 3">
+                        <div class="w-8 h-8 rounded-full border-2 border-white ring-1 ring-slate-200 bg-blue-600 flex items-center justify-center text-white text-[10px] font-bold">MC</div>
+                        <div class="w-8 h-8 rounded-full border-2 border-white ring-1 ring-slate-200 bg-emerald-600 flex items-center justify-center text-white text-[10px] font-bold">CA</div>
+                        <div class="w-8 h-8 rounded-full border-2 border-white ring-1 ring-slate-200 bg-violet-600 flex items-center justify-center text-white text-[10px] font-bold">FL</div>
                     </div>
                     <p class="text-sm text-slate-600">
                         <span class="font-semibold text-slate-900">4.9/5</span> — Avaliação média de 12.847 clientes
@@ -282,15 +280,37 @@
                 </div>
             </div>
             
-            <!-- Hero Image -->
+            <!-- Hero Visual (self-contained) -->
             <div class="relative hidden lg:block">
-                <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
-                    <img src="https://picsum.photos/id/1016/900/700" 
-                         alt="Família feliz protegida pela MB Corretora de Seguros - pai, mãe e filhos sorrindo em ambiente moderno e seguro"
-                         class="w-full h-full object-cover">
+                <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-slate-200 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 flex items-center justify-center relative">
+                    <!-- Decorative shield illustration -->
+                    <div class="relative w-64 h-64 flex items-center justify-center">
+                        <!-- Background glow -->
+                        <div class="absolute w-80 h-80 bg-blue-600/10 rounded-full blur-3xl"></div>
+                        
+                        <!-- Main Shield -->
+                        <svg width="180" height="200" viewBox="0 0 180 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="drop-shadow-2xl">
+                            <!-- Outer shield -->
+                            <path d="M90 15 L160 40 L160 105 Q160 155 90 175 Q20 155 20 105 L20 40 Z" fill="#1E40AF"/>
+                            <!-- Inner highlight -->
+                            <path d="M90 28 L145 50 L145 100 Q145 140 90 158 Q35 140 35 100 L35 50 Z" fill="#3B82F6"/>
+                            <!-- MB text -->
+                            <text x="90" y="105" font-family="Inter, system-ui, sans-serif" font-size="42" font-weight="800" fill="white" text-anchor="middle" dominant-baseline="middle">MB</text>
+                            <!-- Small shield lines -->
+                            <path d="M55 70 L125 70" stroke="white" stroke-opacity="0.3" stroke-width="2"/>
+                            <path d="M55 90 L125 90" stroke="white" stroke-opacity="0.3" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    
+                    <!-- Subtle text overlay -->
+                    <div class="absolute bottom-8 left-8 right-8 text-center">
+                        <div class="inline-flex items-center gap-x-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-2xl border border-white/20">
+                            <span class="text-white text-sm font-medium">Proteção que você pode confiar</span>
+                        </div>
+                    </div>
                 </div>
                 
-                <!-- Floating trust badge on hero image -->
+                <!-- Floating trust badge -->
                 <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl border border-slate-100 px-5 py-4 flex items-center gap-x-3 modern-shadow">
                     <div class="flex items-center">
                         <i class="fas fa-award text-blue-600 text-2xl mr-3"></i>
@@ -614,8 +634,8 @@
                         <div class="mt-8 pt-6 border-t border-slate-700">
                             <div class="flex items-center gap-x-3">
                                 <div class="flex -space-x-1">
-                                    <img class="w-7 h-7 rounded-full border border-slate-700" src="https://picsum.photos/id/1005/28/28" alt="">
-                                    <img class="w-7 h-7 rounded-full border border-slate-700" src="https://picsum.photos/id/64/28/28" alt="">
+                                    <div class="w-7 h-7 rounded-full border border-slate-700 bg-blue-600"></div>
+                                    <div class="w-7 h-7 rounded-full border border-slate-700 bg-emerald-600"></div>
                                 </div>
                                 <p class="text-xs text-slate-400">+ 2.847 pessoas receberam cotações hoje</p>
                             </div>
@@ -1120,29 +1140,25 @@
                 name: "Mariana Costa",
                 role: "Empresária • São Paulo",
                 text: "A MB encontrou um seguro de vida com cobertura excelente por um preço muito justo. O atendimento foi rápido e o corretor explicou tudo com clareza. Recomendo de olhos fechados!",
-                rating: 5,
-                avatar: "https://picsum.photos/id/1011/48/48"
+                rating: 5
             },
             {
                 name: "Carlos Mendes",
                 role: "Motorista de aplicativo • Rio de Janeiro",
                 text: "Meu carro foi roubado e o processo de sinistro foi extremamente rápido. Recebi o pagamento em menos de 20 dias. A equipe da MB acompanhou tudo do início ao fim.",
-                rating: 5,
-                avatar: "https://picsum.photos/id/1005/48/48"
+                rating: 5
             },
             {
                 name: "Fernanda Lima",
                 role: "Médica • Belo Horizonte",
                 text: "Contratei o seguro residencial e o empresarial da minha clínica. A cotação foi personalizada e consegui economizar 28% em relação à minha antiga seguradora. Atendimento impecável.",
-                rating: 5,
-                avatar: "https://picsum.photos/id/64/48/48"
+                rating: 5
             },
             {
                 name: "Ricardo Almeida",
                 role: "Engenheiro • Curitiba",
                 text: "Viajo muito a trabalho e o seguro viagem da MB me salvou duas vezes. Cancelamento de voo e problema médico no exterior foram resolvidos com agilidade. Melhor custo-benefício que já tive.",
-                rating: 5,
-                avatar: "https://picsum.photos/id/1009/48/48"
+                rating: 5
             }
         ];
 
@@ -1177,7 +1193,9 @@
                         <p class="text-slate-700 text-[15px] leading-relaxed flex-grow">"${testimonial.text}"</p>
                         
                         <div class="flex items-center gap-x-3 mt-6 pt-6 border-t border-slate-100">
-                            <img src="${testimonial.avatar}" alt="${testimonial.name}" class="w-11 h-11 rounded-full object-cover ring-1 ring-slate-200">
+                            <div class="w-11 h-11 rounded-full ring-1 ring-slate-200 flex items-center justify-center text-white font-bold text-sm" style="background-color: #1E40AF">
+                                ${testimonial.name.split(' ').map(n => n[0]).join('')}
+                            </div>
                             <div>
                                 <div class="font-semibold text-slate-900">${testimonial.name}</div>
                                 <div class="text-xs text-slate-500">${testimonial.role}</div>
@@ -1443,16 +1461,7 @@
                 }
             });
             
-            // Preload some images (better UX)
-            const preloadImages = [
-                'https://picsum.photos/id/1016/900/700',
-                'https://picsum.photos/id/1011/48/48',
-                'https://picsum.photos/id/1005/48/48'
-            ];
-            preloadImages.forEach(src => {
-                const img = new Image();
-                img.src = src;
-            });
+            // No external images to preload (self-contained version)
             
             // Console message for developers
             console.log('%c[MB Corretora de Seguros] Site de demonstração carregado com sucesso. Pronto para produção.', 'color:#64748b; font-size: 10px');
@@ -2304,5 +2313,5 @@
                 }, 300);
             }
     </script>
-</body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a06bd081fd1d784c',t:'MTc4MDYyNzI0Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
