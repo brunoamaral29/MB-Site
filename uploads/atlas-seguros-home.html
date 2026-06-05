@@ -1,0 +1,2317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MB Corretora de Seguros | Corretora de seguros confiável. Cotação online grátis para seguro auto, vida, residencial, empresarial e viagem. Atendimento personalizado com as melhores seguradoras do Brasil.">
+    <meta name="keywords" content="corretora de seguros, cotar seguro auto, seguro de vida, seguro residencial, seguro empresarial, cotação de seguros, seguros perto de mim, porto seguro, allianz, sulamerica">
+    <title>MB Corretora de Seguros | Corretora de Seguros Confiável | Cotação Online Grátis</title>
+    
+    <!-- Favicon inline (para deploy simples) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%230F172A'/%3E%3Cpath d='M16 3 L26 7 L26 16 Q26 23 16 28 Q6 23 6 16 L6 7 Z' fill='%231E40AF'/%3E%3Cpath d='M16 5 L24 8.5 L24 15.5 Q24 21 16 25.5 Q8 21 8 15.5 L8 8.5 Z' fill='%233B82F6'/%3E%3Ctext x='16' y='20' font-family='sans-serif' font-size='11' font-weight='700' fill='white' text-anchor='middle' dominant-baseline='middle'%3EMB%3C/text%3E%3C/svg%3E">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Roboto:wght@400;500;700&amp;display=swap');
+        
+        :root {
+            --primary-navy: #0F172A;
+            --accent-blue: #1E40AF;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Inter', system_ui, sans-serif;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .nav-link {
+            transition: color 0.2s ease;
+        }
+        
+        .nav-link:hover {
+            color: #1E40AF;
+        }
+
+        .section-title {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            font-weight: 700;
+            color: #0F172A;
+        }
+
+        .card {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                        box-shadow 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .insurance-card {
+            border: 1px solid #E2E8F0;
+        }
+
+        .stat-number {
+            font-variant-numeric: tabular-nums;
+        }
+
+        .trust-badge {
+            transition: all 0.3s ease;
+        }
+
+        .modal {
+            animation: modalPop 0.2s ease-out forwards;
+        }
+
+        @keyframes modalPop {
+            from {
+                opacity: 0;
+                transform: scale(0.95) translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .form-input {
+            transition: all 0.2s ease;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: #1E40AF;
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+        }
+
+        .cta-button {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 600;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgb(59 130 246 / 0.2), 0 4px 6px -4px rgb(59 130 246 / 0.2);
+        }
+
+        .nav-dropdown {
+            animation: dropdownFade 0.15s ease-out forwards;
+        }
+
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+
+        .floating-whatsapp {
+            box-shadow: 0 10px 15px -3px rgb(16 185 129 / 0.3), 0 4px 6px -4px rgb(16 185 129 / 0.3);
+            transition: transform 0.2s ease;
+        }
+        
+        .floating-whatsapp:hover {
+            transform: scale(1.05);
+        }
+
+        .modern-shadow {
+            box-shadow: 0 10px 15px -3px rgb(15 23 42 / 0.1), 0 4px 6px -4px rgb(15 23 42 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700">
+    <!-- HEADER / NAV -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="flex items-center justify-center w-11 h-11 bg-blue-950 rounded-xl">
+                        <i class="fas fa-shield-alt text-white text-3xl"></i>
+                    </div>
+                    <div class="leading-none">
+                        <span class="font-bold text-3xl tracking-tighter text-slate-900">MB</span>
+                        <span class="block text-[13px] font-semibold tracking-[0.5px] text-blue-600 -mt-1">CORRETORA DE SEGUROS</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center gap-x-8">
+                    <a href="#" class="nav-link text-sm font-medium text-slate-600">Home</a>
+                    
+                    <!-- Seguros Dropdown -->
+                    <div class="relative group">
+                        <a href="#servicos" 
+                           class="nav-link flex items-center gap-x-1.5 text-sm font-medium text-slate-600 hover:text-slate-900">
+                            Seguros
+                            <i class="fas fa-chevron-down text-xs transition-transform group-hover:rotate-180"></i>
+                        </a>
+                        
+                        <!-- Dropdown -->
+                        <div class="absolute left-0 mt-3 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 py-2 nav-dropdown hidden group-hover:block z-50">
+                            <div class="px-2">
+                                <a href="#servicos" class="flex items-center gap-x-3 px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 rounded-xl">
+                                    <i class="fas fa-car w-4 text-blue-600"></i>
+                                    <span>Seguro Auto</span>
+                                </a>
+                                <a href="#servicos" class="flex items-center gap-x-3 px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 rounded-xl">
+                                    <i class="fas fa-heart w-4 text-blue-600"></i>
+                                    <span>Seguro de Vida</span>
+                                </a>
+                                <a href="#servicos" class="flex items-center gap-x-3 px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 rounded-xl">
+                                    <i class="fas fa-home w-4 text-blue-600"></i>
+                                    <span>Seguro Residencial</span>
+                                </a>
+                                <a href="#servicos" class="flex items-center gap-x-3 px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 rounded-xl">
+                                    <i class="fas fa-building w-4 text-blue-600"></i>
+                                    <span>Seguro Empresarial</span>
+                                </a>
+                                <a href="#servicos" class="flex items-center gap-x-3 px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 rounded-xl">
+                                    <i class="fas fa-plane w-4 text-blue-600"></i>
+                                    <span>Seguro Viagem</span>
+                                </a>
+                                <div class="border-t my-1 mx-4"></div>
+                                <a href="#servicos" class="flex items-center justify-between px-4 py-3 text-sm font-medium text-blue-700 hover:bg-blue-50 rounded-xl">
+                                    <span>Ver todas as modalidades</span>
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#porque-escolher" class="nav-link text-sm font-medium text-slate-600">Por que a MB?</a>
+                    <a href="#confianca" class="nav-link text-sm font-medium text-slate-600">Clientes</a>
+                    <a href="#cotacao" class="nav-link text-sm font-medium text-slate-600">Cotação</a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <div class="hidden md:flex items-center gap-x-3">
+                    <a href="https://wa.me/5511987654321?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20corretor%20da%20MB%20Corretora%20de%20Seguros." 
+                       target="_blank"
+                       class="flex items-center gap-x-2 px-5 py-2.5 text-sm font-semibold text-blue-700 bg-blue-100 hover:bg-blue-200 rounded-2xl transition-colors">
+                        <i class="fab fa-whatsapp text-emerald-500"></i>
+                        <span>Falar com Corretor</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger -->
+                <button id="mobile-menu-btn" 
+                        class="md:hidden flex items-center justify-center w-10 h-10 text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-xl transition-colors"
+                        aria-label="Abrir menu">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200">
+            <div class="px-4 py-4 space-y-1">
+                <a href="#" class="block px-4 py-3 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-xl">Home</a>
+                <a href="#servicos" class="block px-4 py-3 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-xl">Seguros</a>
+                <a href="#porque-escolher" class="block px-4 py-3 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-xl">Por que a MB?</a>
+                <a href="#confianca" class="block px-4 py-3 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-xl">Clientes</a>
+                <a href="#cotacao" class="block px-4 py-3 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-xl">Cotação</a>
+                
+                <div class="pt-3 border-t">
+                    <a href="https://wa.me/5511987654321?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20corretor%20da%20MB%20Corretora%20de%20Seguros." 
+                       target="_blank"
+                       class="flex items-center justify-center gap-x-2 w-full px-5 py-3 text-sm font-semibold text-blue-700 bg-blue-100 hover:bg-blue-200 rounded-2xl transition-colors">
+                        <i class="fab fa-whatsapp text-lg"></i>
+                        <span>Falar com Corretor</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16 md:pt-16 md:pb-20">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Hero Content -->
+            <div class="max-w-xl">
+                <div class="inline-flex items-center gap-x-2 bg-blue-100 text-blue-700 text-sm font-medium px-4 py-1.5 rounded-3xl mb-6">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Mais de 52 mil clientes protegidos</span>
+                </div>
+                
+                <h1 class="heading-font text-5xl lg:text-6xl leading-[1.05] tracking-tighter text-slate-900 mb-6">
+                    Proteja o que mais importa<br>com quem você confia.
+                </h1>
+                
+                <p class="text-xl text-slate-600 mb-8 leading-relaxed">
+                    Encontre o seguro ideal para sua vida, sua família ou sua empresa 
+                    com as melhores condições do mercado e atendimento humano de verdade.
+                </p>
+                
+                <!-- CTAs -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button onclick="openSimuladorModal()" 
+                            class="cta-button flex-1 sm:flex-none items-center justify-center gap-x-3 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-3xl font-semibold text-lg shadow-lg flex">
+                        <span>Simular Seguro Online</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    
+                    <a href="https://wa.me/5511987654321?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20corretor%20da%20MB%20Corretora%20de%20Seguros." 
+                       target="_blank"
+                       class="cta-button flex-1 sm:flex-none items-center justify-center gap-x-3 border-2 border-slate-300 hover:border-slate-400 text-slate-700 hover:text-slate-900 px-8 py-4 rounded-3xl font-semibold text-lg flex transition-colors">
+                        <i class="fab fa-whatsapp text-emerald-500 text-xl"></i>
+                        <span>Chamar no WhatsApp</span>
+                    </a>
+                </div>
+                
+                <div class="flex items-center gap-x-6 mt-8">
+                    <div class="flex -space-x-2">
+                        <div class="w-8 h-8 rounded-full border-2 border-white ring-1 ring-slate-200 bg-blue-600 flex items-center justify-center text-white text-[10px] font-bold">MC</div>
+                        <div class="w-8 h-8 rounded-full border-2 border-white ring-1 ring-slate-200 bg-emerald-600 flex items-center justify-center text-white text-[10px] font-bold">CA</div>
+                        <div class="w-8 h-8 rounded-full border-2 border-white ring-1 ring-slate-200 bg-violet-600 flex items-center justify-center text-white text-[10px] font-bold">FL</div>
+                    </div>
+                    <p class="text-sm text-slate-600">
+                        <span class="font-semibold text-slate-900">4.9/5</span> — Avaliação média de 12.847 clientes
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Hero Visual (self-contained) -->
+            <div class="relative hidden lg:block">
+                <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-slate-200 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 flex items-center justify-center relative">
+                    <!-- Decorative shield illustration -->
+                    <div class="relative w-64 h-64 flex items-center justify-center">
+                        <!-- Background glow -->
+                        <div class="absolute w-80 h-80 bg-blue-600/10 rounded-full blur-3xl"></div>
+                        
+                        <!-- Main Shield -->
+                        <svg width="180" height="200" viewBox="0 0 180 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="drop-shadow-2xl">
+                            <!-- Outer shield -->
+                            <path d="M90 15 L160 40 L160 105 Q160 155 90 175 Q20 155 20 105 L20 40 Z" fill="#1E40AF"/>
+                            <!-- Inner highlight -->
+                            <path d="M90 28 L145 50 L145 100 Q145 140 90 158 Q35 140 35 100 L35 50 Z" fill="#3B82F6"/>
+                            <!-- MB text -->
+                            <text x="90" y="105" font-family="Inter, system-ui, sans-serif" font-size="42" font-weight="800" fill="white" text-anchor="middle" dominant-baseline="middle">MB</text>
+                            <!-- Small shield lines -->
+                            <path d="M55 70 L125 70" stroke="white" stroke-opacity="0.3" stroke-width="2"/>
+                            <path d="M55 90 L125 90" stroke="white" stroke-opacity="0.3" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    
+                    <!-- Subtle text overlay -->
+                    <div class="absolute bottom-8 left-8 right-8 text-center">
+                        <div class="inline-flex items-center gap-x-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-2xl border border-white/20">
+                            <span class="text-white text-sm font-medium">Proteção que você pode confiar</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Floating trust badge -->
+                <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl border border-slate-100 px-5 py-4 flex items-center gap-x-3 modern-shadow">
+                    <div class="flex items-center">
+                        <i class="fas fa-award text-blue-600 text-2xl mr-3"></i>
+                        <div>
+                            <div class="font-semibold text-sm text-slate-900">Premiada em 2025</div>
+                            <div class="text-xs text-slate-600">Melhor Corretora Digital</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR / PARCEIRAS -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <div class="text-center mb-4">
+            <p class="text-xs tracking-[1.5px] font-semibold text-slate-500 uppercase">Trabalhamos com as maiores seguradoras do Brasil</p>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+            <button onclick="showPartnerInfo('Porto Seguro')" class="flex items-center text-sm font-semibold text-slate-600 hover:text-blue-700 transition-colors">
+                <i class="fas fa-building mr-2"></i> Porto Seguro
+            </button>
+            <button onclick="showPartnerInfo('Allianz')" class="flex items-center text-sm font-semibold text-slate-600 hover:text-blue-700 transition-colors">
+                <i class="fas fa-building mr-2"></i> Allianz
+            </button>
+            <button onclick="showPartnerInfo('SulAmérica')" class="flex items-center text-sm font-semibold text-slate-600 hover:text-blue-700 transition-colors">
+                <i class="fas fa-building mr-2"></i> SulAmérica
+            </button>
+            <button onclick="showPartnerInfo('Mapfre')" class="flex items-center text-sm font-semibold text-slate-600 hover:text-blue-700 transition-colors">
+                <i class="fas fa-building mr-2"></i> Mapfre
+            </button>
+            <button onclick="showPartnerInfo('Azul Seguros')" class="flex items-center text-sm font-semibold text-slate-600 hover:text-blue-700 transition-colors">
+                <i class="fas fa-building mr-2"></i> Azul Seguros
+            </button>
+            <button onclick="showPartnerInfo('Bradesco Seguros')" class="flex items-center text-sm font-semibold text-slate-600 hover:text-blue-700 transition-colors">
+                <i class="fas fa-building mr-2"></i> Bradesco Seguros
+            </button>
+        </div>
+    </div>
+
+    <!-- SERVIÇOS / PRODUTOS -->
+    <section id="servicos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-12">
+            <span class="inline-block px-4 py-1.5 text-xs font-semibold tracking-wider text-blue-700 bg-blue-100 rounded-full mb-4">ESCOLHA O SEU</span>
+            <h2 class="section-title mb-4">Seguros que realmente protegem</h2>
+            <p class="max-w-2xl mx-auto text-lg text-slate-600">Soluções completas e personalizadas para cada momento da sua vida e do seu negócio.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            
+            <!-- Seguro Auto -->
+            <div class="card bg-white p-6 rounded-3xl insurance-card group cursor-pointer" onclick="selectInsuranceType('auto')">
+                <div class="w-14 h-14 flex items-center justify-center bg-blue-100 text-blue-700 rounded-2xl mb-5 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    <i class="fas fa-car text-3xl"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-3 text-slate-900">Seguro Auto</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-6">Proteja seu carro contra roubo, colisão, incêndio e muito mais. Cobertura completa com assistência 24h.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">A partir de R$ 89/mês</span>
+                    <span class="text-blue-600 group-hover:translate-x-1 transition-transform">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Seguro de Vida -->
+            <div class="card bg-white p-6 rounded-3xl insurance-card group cursor-pointer" onclick="selectInsuranceType('vida')">
+                <div class="w-14 h-14 flex items-center justify-center bg-rose-100 text-rose-700 rounded-2xl mb-5 group-hover:bg-rose-600 group-hover:text-white transition-colors">
+                    <i class="fas fa-heart text-3xl"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-3 text-slate-900">Seguro de Vida</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-6">Garanta o futuro da sua família com indenização por morte, invalidez e doenças graves. Planos flexíveis.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">A partir de R$ 29/mês</span>
+                    <span class="text-blue-600 group-hover:translate-x-1 transition-transform">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Seguro Residencial -->
+            <div class="card bg-white p-6 rounded-3xl insurance-card group cursor-pointer" onclick="selectInsuranceType('residencial')">
+                <div class="w-14 h-14 flex items-center justify-center bg-amber-100 text-amber-700 rounded-2xl mb-5 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                    <i class="fas fa-home text-3xl"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-3 text-slate-900">Seguro Residencial</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-6">Proteja sua casa, apartamento e bens contra incêndio, roubo, vendaval e danos elétricos. Tranquilidade para o lar.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">A partir de R$ 45/mês</span>
+                    <span class="text-blue-600 group-hover:translate-x-1 transition-transform">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Seguro Empresarial -->
+            <div class="card bg-white p-6 rounded-3xl insurance-card group cursor-pointer" onclick="selectInsuranceType('empresarial')">
+                <div class="w-14 h-14 flex items-center justify-center bg-violet-100 text-violet-700 rounded-2xl mb-5 group-hover:bg-violet-600 group-hover:text-white transition-colors">
+                    <i class="fas fa-building text-3xl"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-3 text-slate-900">Seguro Empresarial</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-6">Proteja seu negócio com responsabilidade civil, incêndio, perda de lucro e proteção para equipamentos e funcionários.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">A partir de R$ 149/mês</span>
+                    <span class="text-blue-600 group-hover:translate-x-1 transition-transform">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Seguro Viagem -->
+            <div class="card bg-white p-6 rounded-3xl insurance-card group cursor-pointer" onclick="selectInsuranceType('viagem')">
+                <div class="w-14 h-14 flex items-center justify-center bg-sky-100 text-sky-700 rounded-2xl mb-5 group-hover:bg-sky-600 group-hover:text-white transition-colors">
+                    <i class="fas fa-plane text-3xl"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-3 text-slate-900">Seguro Viagem</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-6">Viaje com tranquilidade. Cobertura médica internacional, cancelamento, bagagem extraviada e assistência 24h.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">A partir de R$ 19/dia</span>
+                    <span class="text-blue-600 group-hover:translate-x-1 transition-transform">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="text-center mt-10">
+            <a href="#servicos" 
+               class="inline-flex items-center gap-x-2 text-blue-700 hover:text-blue-800 font-semibold text-sm group">
+                VER TODAS AS MODALIDADES E COBERTURAS 
+                <i class="fas fa-arrow-right transition group-hover:translate-x-1"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- MICRO-QUIZ DE RECOMENDAÇÃO ("Qual Seguro eu Preciso?") -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white border-t border-slate-100">
+        <div class="max-w-3xl mx-auto text-center mb-8">
+            <span class="inline-block px-4 py-1 text-xs font-semibold bg-blue-100 text-blue-700 rounded-full mb-3">DESCUBRA EM 20 SEGUNDOS</span>
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-2">Qual seguro você realmente precisa?</h2>
+            <p class="text-slate-600">Responda 3 perguntas rápidas e receba uma recomendação personalizada na hora.</p>
+        </div>
+        
+        <div id="quiz-container" class="max-w-2xl mx-auto bg-slate-50 rounded-3xl p-8">
+            <div id="quiz-questions">
+                <!-- Populated by JS -->
+            </div>
+            
+            <div id="quiz-result" class="hidden">
+                <div class="text-center">
+                    <div class="mx-auto w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-lightbulb text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2" id="quiz-recomendacao-titulo"></h3>
+                    <p class="text-slate-600 mb-6" id="quiz-recomendacao-desc"></p>
+                    
+                    <button onclick="iniciarSimuladorComRecomendacao()" 
+                            class="cta-button bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 rounded-3xl font-semibold">
+                        Começar simulador com essa recomendação
+                    </button>
+                    
+                    <button onclick="resetQuiz()" class="block mx-auto mt-4 text-sm text-slate-500 hover:text-slate-700">Refazer o quiz</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFERENCIAIS / POR QUE ESCOLHER -->
+    <section id="porque-escolher" class="bg-white py-16 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block px-4 py-1.5 text-xs font-semibold tracking-wider text-blue-700 bg-blue-100 rounded-full mb-4">NOSSA DIFERENÇA</span>
+                <h2 class="section-title mb-4">Por que mais de 52 mil pessoas escolhem a MB?</h2>
+                <p class="max-w-xl mx-auto text-lg text-slate-600">Não somos apenas uma corretora. Somos seu parceiro de proteção.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Pilar 1 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Atendimento 24h e suporte real</h3>
+                    <p class="text-slate-600 leading-relaxed">Nossa equipe especializada está disponível todos os dias, inclusive em feriados. Suporte completo em sinistros com acompanhamento até o pagamento.</p>
+                </div>
+                
+                <!-- Pilar 2 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-handshake text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">As melhores seguradoras do país</h3>
+                    <p class="text-slate-600 leading-relaxed">Trabalhamos com mais de 15 seguradoras líderes. Isso significa mais opções, melhores preços e condições exclusivas para você.</p>
+                </div>
+                
+                <!-- Pilar 3 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-calculator text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Cotação personalizada e sem custo</h3>
+                    <p class="text-slate-600 leading-relaxed">Receba cotações comparativas em minutos. Analisamos seu perfil e necessidades para indicar a melhor proteção pelo melhor preço. 100% gratuito.</p>
+                </div>
+                
+                <!-- Pilar 4 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-tachometer-alt text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Processo 100% digital + humano</h3>
+                    <p class="text-slate-600 leading-relaxed">Cotação, contratação e sinistros 100% online, mas com um corretor dedicado que te acompanha em todo o processo. Nunca fique sozinho.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROVA SOCIAL -->
+    <section id="confianca" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <!-- Estatísticas -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-slate-200 rounded-3xl overflow-hidden mb-16">
+            <div class="bg-white p-8 text-center">
+                <div class="text-4xl font-bold text-slate-900 mb-1 stat-number" id="stat-clients">52000</div>
+                <div class="text-sm font-medium text-slate-600">Clientes atendidos</div>
+                <div class="text-[10px] text-blue-600 mt-1">+ 8.400 este ano</div>
+            </div>
+            <div class="bg-white p-8 text-center">
+                <div class="text-4xl font-bold text-slate-900 mb-1 stat-number" id="stat-years">15</div>
+                <div class="text-sm font-medium text-slate-600">Anos de mercado</div>
+                <div class="text-[10px] text-blue-600 mt-1">Desde 2011</div>
+            </div>
+            <div class="bg-white p-8 text-center">
+                <div class="text-4xl font-bold text-slate-900 mb-1">
+                    <span class="stat-number" id="stat-sinistros">320</span>
+                    <span class="text-3xl">mi</span>
+                </div>
+                <div class="text-sm font-medium text-slate-600">Em sinistros pagos</div>
+                <div class="text-[10px] text-blue-600 mt-1">100% de pagamento em 2025</div>
+            </div>
+            <div class="bg-white p-8 text-center">
+                <div class="text-4xl font-bold text-slate-900 mb-1">98</div>
+                <div class="text-sm font-medium text-slate-600">de satisfação</div>
+                <div class="flex justify-center mt-2">
+                    <div class="flex text-blue-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Depoimentos -->
+        <div class="text-center mb-10">
+            <h2 class="section-title mb-2">O que nossos clientes dizem</h2>
+            <p class="text-lg text-slate-600">Histórias reais de quem já protege o que mais importa.</p>
+        </div>
+        
+        <!-- Carousel -->
+        <div class="relative max-w-5xl mx-auto">
+            <div id="testimonial-carousel" class="overflow-hidden">
+                <div id="carousel-track" class="flex transition-transform duration-500 ease-out">
+                    <!-- Testimonials populated by JS -->
+                </div>
+            </div>
+            
+            <!-- Carousel Controls -->
+            <div class="flex items-center justify-center gap-x-4 mt-8">
+                <button onclick="prevTestimonial()" 
+                        class="w-11 h-11 flex items-center justify-center border border-slate-300 text-slate-600 hover:bg-slate-100 hover:text-slate-900 rounded-2xl transition-colors">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="flex items-center gap-x-1.5" id="carousel-dots">
+                    <!-- Dots populated by JS -->
+                </div>
+                
+                <button onclick="nextTestimonial()" 
+                        class="w-11 h-11 flex items-center justify-center border border-slate-300 text-slate-600 hover:bg-slate-100 hover:text-slate-900 rounded-2xl transition-colors">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULÁRIO DE CAPTURA DE LEADS -->
+    <section id="cotacao" class="bg-slate-900 py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-5 gap-12 items-start">
+                
+                <!-- Form Info -->
+                <div class="lg:col-span-2 text-white">
+                    <div class="sticky top-8">
+                        <span class="inline-flex items-center text-blue-400 text-sm font-semibold tracking-wider mb-3">
+                            <i class="fas fa-bolt mr-2"></i> 
+                            COTAÇÃO EM 2 MINUTOS
+                        </span>
+                        
+                        <h2 class="heading-font text-4xl lg:text-5xl tracking-tighter leading-tight text-white mb-6">
+                            Receba sua cotação gratuita agora.
+                        </h2>
+                        
+                        <div class="space-y-4 text-slate-300">
+                            <div class="flex items-start gap-x-3">
+                                <i class="fas fa-check text-blue-400 mt-1"></i>
+                                <span class="text-sm">Compare até 8 seguradoras em uma única cotação</span>
+                            </div>
+                            <div class="flex items-start gap-x-3">
+                                <i class="fas fa-check text-blue-400 mt-1"></i>
+                                <span class="text-sm">Corretor dedicado entra em contato em até 15 minutos</span>
+                            </div>
+                            <div class="flex items-start gap-x-3">
+                                <i class="fas fa-check text-blue-400 mt-1"></i>
+                                <span class="text-sm">Sem compromisso e sem custo</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 pt-6 border-t border-slate-700">
+                            <div class="flex items-center gap-x-3">
+                                <div class="flex -space-x-1">
+                                    <div class="w-7 h-7 rounded-full border border-slate-700 bg-blue-600"></div>
+                                    <div class="w-7 h-7 rounded-full border border-slate-700 bg-emerald-600"></div>
+                                </div>
+                                <p class="text-xs text-slate-400">+ 2.847 pessoas receberam cotações hoje</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Promoção do Novo Simulador Interativo -->
+                <div class="lg:col-span-3 bg-white rounded-3xl p-8 shadow-xl flex flex-col">
+                    <div class="flex-1">
+                        <div class="inline-flex items-center gap-x-2 bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+                            <i class="fas fa-rocket"></i>
+                            <span>NOVO: Simulador Inteligente</span>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Obtenha cotações personalizadas em menos de 90 segundos</h3>
+                        <p class="text-slate-600 mb-6">Nosso assistente interativo faz perguntas inteligentes, qualifica seu perfil e te entrega as melhores opções de várias seguradoras.</p>
+                        
+                        <div class="space-y-3 text-sm text-slate-600">
+                            <div class="flex items-start gap-x-3">
+                                <i class="fas fa-check text-blue-600 mt-1"></i>
+                                <span>Captura de contato nas primeiras etapas (mesmo se abandonar)</span>
+                            </div>
+                            <div class="flex items-start gap-x-3">
+                                <i class="fas fa-check text-blue-600 mt-1"></i>
+                                <span>Perguntas condicionais por tipo de seguro</span>
+                            </div>
+                            <div class="flex items-start gap-x-3">
+                                <i class="fas fa-check text-blue-600 mt-1"></i>
+                                <span>Recomendações personalizadas + opção de agendar com especialista</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button onclick="openSimuladorModal()" 
+                            class="cta-button mt-8 w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 rounded-3xl text-lg flex items-center justify-center gap-x-2 shadow-lg">
+                        <span>Abrir Simulador Inteligente</span>
+                        <i class="fas fa-play"></i>
+                    </button>
+                    
+                    <p class="text-center text-[10px] text-slate-500 mt-3">Leva menos de 2 minutos • 100% gratuito</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-y-10 gap-x-8">
+                
+                <!-- Logo + Info -->
+                <div class="col-span-2 md:col-span-2">
+                    <div class="flex items-center gap-x-3 mb-4">
+                        <div class="flex items-center justify-center w-9 h-9 bg-blue-600 rounded-xl">
+                            <i class="fas fa-shield-alt text-white"></i>
+                        </div>
+                        <div class="leading-none">
+                            <span class="font-bold text-2xl text-white tracking-tighter">MB</span>
+                            <span class="block text-[10px] font-semibold tracking-[0.5px] text-blue-400 -mt-0.5">CORRETORA DE SEGUROS</span>
+                        </div>
+                    </div>
+                    <p class="text-sm leading-relaxed max-w-xs">
+                        Proteção inteligente para quem valoriza tranquilidade. 
+                        Corretora autorizada pela SUSEP.
+                    </p>
+                    
+                    <div class="mt-6 flex gap-x-4">
+                        <a href="#" class="text-xl hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-xl hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-xl hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-white mb-4 text-sm tracking-wider">Seguros</h4>
+                    <ul class="space-y-[9px] text-sm">
+                        <li><a href="#servicos" class="hover:text-white transition-colors">Seguro Auto</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition-colors">Seguro de Vida</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition-colors">Seguro Residencial</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition-colors">Seguro Empresarial</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-white mb-4 text-sm tracking-wider">Empresa</h4>
+                    <ul class="space-y-[9px] text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors">Sobre a MB</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Nossa equipe</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Trabalhe conosco</a></li>
+                        <li><a href="#confianca" class="hover:text-white transition-colors">Depoimentos</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-white mb-4 text-sm tracking-wider">Suporte</h4>
+                    <ul class="space-y-[9px] text-sm">
+                        <li><a href="https://wa.me/5511987654321" target="_blank" class="hover:text-white transition-colors">Falar no WhatsApp</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Central de Atendimento</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Sinistros</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                    
+                    <div class="mt-6 pt-4 border-t border-slate-800 text-xs">
+                        <a href="https://wa.me/5511987654321" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-medium">
+                            <i class="fab fa-whatsapp text-emerald-500 mr-2"></i> 
+                            (11) 98765-4321
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Legal / Obrigatório por lei -->
+            <div class="mt-16 pt-8 border-t border-slate-800 text-xs text-slate-500">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-y-3">
+                    <div>
+                        <p>© 2026 MB Corretora de Seguros Ltda. Todos os direitos reservados.</p>
+                    </div>
+                    
+                    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+                        <span class="font-mono">CNPJ: 12.345.678/0001-90</span>
+                        <span class="font-mono">SUSEP: 123456789</span>
+                        <a href="#" class="hover:text-slate-400 transition-colors">Política de Privacidade</a>
+                        <a href="#" class="hover:text-slate-400 transition-colors">Termos de Uso</a>
+                        <a href="#" class="hover:text-slate-400 transition-colors">LGPD</a>
+                    </div>
+                </div>
+                
+                <div class="mt-4 text-[10px] text-slate-600">
+                    Esta é uma página demonstrativa. Os dados da corretora (CNPJ e SUSEP) são fictícios para fins de exemplo.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/5511987654321?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20corretor%20da%20MB%20Corretora%20de%20Seguros." 
+       target="_blank"
+       class="floating-whatsapp fixed bottom-6 right-6 z-50 bg-emerald-600 hover:bg-emerald-700 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl">
+        <i class="fab fa-whatsapp text-emerald-500 text-3xl"></i>
+    </a>
+
+    <!-- SUCCESS MODAL (after form submit) -->
+    <div id="success-modal" class="hidden fixed inset-0 bg-black/60 flex items-center justify-center z-[100]">
+        <div class="modal bg-white max-w-md w-full mx-4 rounded-3xl p-8 text-center">
+            <div class="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                <i class="fas fa-check text-blue-600 text-3xl"></i>
+            </div>
+            
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">Cotação solicitada com sucesso!</h3>
+            <p class="text-slate-600 mb-6">Obrigado! Um de nossos corretores especializados entrará em contato com você em até <strong>15 minutos</strong> pelo WhatsApp.</p>
+            
+            <div class="bg-slate-50 rounded-2xl p-4 mb-6 text-left text-sm">
+                <p class="font-medium text-slate-700">Próximos passos:</p>
+                <ul class="mt-2 space-y-1 text-slate-600">
+                    <li class="flex items-center gap-x-2"><i class="fas fa-check text-blue-500 w-4"></i> Análise do seu perfil</li>
+                    <li class="flex items-center gap-x-2"><i class="fas fa-check text-blue-500 w-4"></i> Comparação de 6 a 8 opções</li>
+                    <li class="flex items-center gap-x-2"><i class="fas fa-check text-blue-500 w-4"></i> Envio da melhor proposta</li>
+                </ul>
+            </div>
+            
+            <button onclick="closeSuccessModal()" 
+                    class="w-full py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-3xl">
+                Voltar para o site
+            </button>
+            
+            <p class="text-xs text-slate-500 mt-4">Você também pode falar conosco diretamente no WhatsApp.</p>
+        </div>
+    </div>
+
+    <!-- SIMULADOR MULTI-STEP MODAL (Nova Plataforma Interativa) -->
+    <div id="simulador-modal" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-[110] p-4">
+        <div class="modal bg-white w-full max-w-3xl rounded-3xl shadow-2xl overflow-hidden max-h-[95vh] flex flex-col">
+            
+            <!-- Modal Header with Progress -->
+            <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
+                <div>
+                    <span class="font-bold text-lg">Simulador Inteligente MB</span>
+                    <span class="text-blue-400 text-sm ml-2" id="simulador-progress-text">Etapa 1 de 5</span>
+                </div>
+                <button onclick="closeSimuladorModal()" class="text-slate-400 hover:text-white text-2xl leading-none">×</button>
+            </div>
+            
+            <!-- Progress Bar -->
+            <div class="h-1.5 bg-slate-100">
+                <div id="simulador-progress-bar" class="h-1.5 bg-blue-600 transition-all duration-500" style="width: 20%"></div>
+            </div>
+            
+            <!-- Content Area -->
+            <div class="flex-1 overflow-y-auto p-6 md:p-8" id="simulador-content">
+                
+                <!-- STEP 1: Tipo de Seguro -->
+                <div id="step-1" class="simulador-step">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Qual proteção você precisa hoje?</h3>
+                    <p class="text-slate-600 mb-6">Escolha a opção que mais se aproxima da sua necessidade. É rápido e sem compromisso.</p>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div onclick="selectInsuranceTypeStep('auto')" class="card border-2 border-slate-200 hover:border-blue-600 p-5 rounded-2xl cursor-pointer transition-all flex flex-col items-center text-center">
+                            <i class="fas fa-car text-4xl text-blue-600 mb-3"></i>
+                            <div class="font-semibold">Seguro Auto</div>
+                            <div class="text-xs text-slate-500 mt-1">Carro, moto ou frota</div>
+                        </div>
+                        <div onclick="selectInsuranceTypeStep('vida')" class="card border-2 border-slate-200 hover:border-blue-600 p-5 rounded-2xl cursor-pointer transition-all flex flex-col items-center text-center">
+                            <i class="fas fa-heart text-4xl text-rose-600 mb-3"></i>
+                            <div class="font-semibold">Seguro de Vida</div>
+                            <div class="text-xs text-slate-500 mt-1">Família e futuro</div>
+                        </div>
+                        <div onclick="selectInsuranceTypeStep('residencial')" class="card border-2 border-slate-200 hover:border-blue-600 p-5 rounded-2xl cursor-pointer transition-all flex flex-col items-center text-center">
+                            <i class="fas fa-home text-4xl text-amber-600 mb-3"></i>
+                            <div class="font-semibold">Seguro Residencial</div>
+                            <div class="text-xs text-slate-500 mt-1">Casa, apto e bens</div>
+                        </div>
+                        <div onclick="selectInsuranceTypeStep('empresarial')" class="card border-2 border-slate-200 hover:border-blue-600 p-5 rounded-2xl cursor-pointer transition-all flex flex-col items-center text-center">
+                            <i class="fas fa-building text-4xl text-violet-600 mb-3"></i>
+                            <div class="font-semibold">Seguro Empresarial</div>
+                            <div class="text-xs text-slate-500 mt-1">Negócio e responsabilidade</div>
+                        </div>
+                        <div onclick="selectInsuranceTypeStep('viagem')" class="card border-2 border-slate-200 hover:border-blue-600 p-5 rounded-2xl cursor-pointer transition-all flex flex-col items-center text-center">
+                            <i class="fas fa-plane text-4xl text-sky-600 mb-3"></i>
+                            <div class="font-semibold">Seguro Viagem</div>
+                            <div class="text-xs text-slate-500 mt-1">Tranquilidade em viagens</div>
+                        </div>
+                        <div onclick="selectInsuranceTypeStep('nao-sei')" class="card border-2 border-slate-200 hover:border-blue-600 p-5 rounded-2xl cursor-pointer transition-all flex flex-col items-center text-center bg-blue-50">
+                            <i class="fas fa-question-circle text-4xl text-blue-600 mb-3"></i>
+                            <div class="font-semibold">Não sei ainda</div>
+                            <div class="text-xs text-slate-500 mt-1">Quero uma recomendação</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- STEP 2: Contato (Captura Precoce) -->
+                <div id="step-2" class="simulador-step hidden">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Quase lá! Vamos personalizar sua cotação</h3>
+                    <p class="text-slate-600 mb-6">Seus dados são protegidos pela LGPD. Usamos apenas para enviar as melhores opções.</p>
+                    
+                    <div class="space-y-5">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1.5">Nome completo *</label>
+                            <input type="text" id="sim-nome" class="form-input w-full px-4 py-3 bg-white border border-slate-300 rounded-2xl" placeholder="Seu nome completo">
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1.5">E-mail *</label>
+                                <input type="email" id="sim-email" class="form-input w-full px-4 py-3 bg-white border border-slate-300 rounded-2xl" placeholder="seu@email.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1.5">WhatsApp *</label>
+                                <input type="tel" id="sim-telefone" class="form-input w-full px-4 py-3 bg-white border border-slate-300 rounded-2xl" placeholder="(11) 98765-4321" oninput="formatPhone(this)">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1.5">O que te trouxe aqui hoje?</label>
+                            <select id="sim-motivacao" class="form-input w-full px-4 py-3 bg-white border border-slate-300 rounded-2xl">
+                                <option value="">Selecione uma opção</option>
+                                <option value="renovacao">Renovação do seguro atual (quero pagar menos)</option>
+                                <option value="novo">Acabei de comprar o bem (carro, casa, etc.)</option>
+                                <option value="familia">Quero proteger minha família</option>
+                                <option value="empresa">Proteção para meu negócio</option>
+                                <option value="viagem">Estou planejando uma viagem</option>
+                                <option value="outro">Outro motivo</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 text-xs text-slate-500 flex items-center gap-2">
+                        <i class="fas fa-lock"></i> 
+                        <span>Seus dados são criptografados e nunca compartilhados.</span>
+                    </div>
+                </div>
+                
+                <!-- STEP 3: Qualificação Condicional -->
+                <div id="step-3" class="simulador-step hidden">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2" id="step3-title">Agora vamos aos detalhes importantes</h3>
+                    <p class="text-slate-600 mb-6" id="step3-subtitle">Responda com o que você sabe. Quanto mais preciso, melhor a cotação.</p>
+                    
+                    <!-- Dynamic content inserted by JS based on insuranceType -->
+                    <div id="step3-content"></div>
+                </div>
+                
+                <!-- STEP 4: Preferências -->
+                <div id="step-4" class="simulador-step hidden">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Quais coberturas são prioridade para você?</h3>
+                    <p class="text-slate-600 mb-6">Selecione as que mais importam (pode escolher mais de uma).</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3" id="step4-options">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+                
+                <!-- STEP 5: Resumo + CTAs -->
+                <div id="step-5" class="simulador-step hidden">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Pronto! Aqui está o resumo da sua proteção ideal</h3>
+                    
+                    <div id="resumo-content" class="bg-slate-50 rounded-2xl p-6 mb-6 text-sm"></div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <button onclick="finalizarSimulador('cotacao')" 
+                                class="cta-button w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 rounded-3xl flex items-center justify-center gap-x-2">
+                            <span>Receber cotações no WhatsApp agora</span>
+                        </button>
+                        
+                        <button onclick="finalizarSimulador('agendamento')" 
+                                class="cta-button w-full border-2 border-blue-600 text-blue-700 hover:bg-blue-50 font-semibold py-4 rounded-3xl flex items-center justify-center gap-x-2">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Agendar 15 min com especialista</span>
+                        </button>
+                    </div>
+                    
+                    <p class="text-center text-xs text-slate-500 mt-4">Suas cotações serão enviadas em até 15 minutos. Sem spam, sem pressão.</p>
+                </div>
+            </div>
+            
+            <!-- Modal Footer Navigation -->
+            <div class="border-t px-6 py-4 flex items-center justify-between bg-slate-50">
+                <button onclick="prevStep()" id="btn-voltar"
+                        class="px-6 py-2.5 text-sm font-medium text-slate-600 hover:text-slate-900 flex items-center gap-x-2">
+                    <i class="fas fa-arrow-left"></i> Voltar
+                </button>
+                
+                <button onclick="nextStep()" id="btn-avancar"
+                        class="px-8 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-2xl text-sm flex items-center gap-x-2">
+                    Continuar <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAKE SCHEDULING MODAL (após simulador de alto valor) -->
+    <div id="agendamento-modal" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-[120] p-4">
+        <div class="bg-white w-full max-w-lg rounded-3xl p-8">
+            <h3 class="text-2xl font-bold mb-2">Reserve sua consultoria</h3>
+            <p class="text-slate-600 mb-6">Evite ligações. Escolha o melhor horário com um especialista.</p>
+            
+            <div class="space-y-4 mb-6">
+                <div>
+                    <label class="text-sm font-semibold">Data preferida</label>
+                    <input type="date" id="ag-data" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl" value="2026-06-12">
+                </div>
+                <div>
+                    <label class="text-sm font-semibold">Horário</label>
+                    <select id="ag-horario" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl">
+                        <option>09:00 - 09:15</option>
+                        <option>10:30 - 10:45</option>
+                        <option>14:00 - 14:15</option>
+                        <option>16:30 - 16:45</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="text-sm font-semibold">Especialista</label>
+                    <select id="ag-especialista" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl">
+                        <option>Ana Paula Mendes (Vida & Empresarial)</option>
+                        <option>Ricardo Almeida (Auto & Frota)</option>
+                        <option>Juliana Costa (Residencial & Viagem)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button onclick="confirmarAgendamento()" 
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3.5 rounded-3xl mb-3">
+                Confirmar agendamento
+            </button>
+            
+            <button onclick="closeAgendamentoModal()" class="w-full text-sm text-slate-500">Cancelar</button>
+            
+            <p class="text-[10px] text-center text-slate-400 mt-3">15 minutos • 100% online • Sem compromisso</p>
+        </div>
+    </div>
+
+    <!-- PARTNER INFO MODAL (Hub Interativo de Seguradoras) -->
+    <div id="partner-modal" class="hidden fixed inset-0 bg-black/60 flex items-center justify-center z-[125] p-4">
+        <div class="bg-white max-w-md w-full rounded-3xl p-8">
+            <div class="flex justify-between items-start mb-4">
+                <h3 class="text-xl font-bold" id="partner-name"></h3>
+                <button onclick="closePartnerModal()" class="text-2xl text-slate-400 hover:text-slate-600">×</button>
+            </div>
+            
+            <div id="partner-content" class="text-sm text-slate-600 space-y-3 mb-6"></div>
+            
+            <button onclick="cotarComSeguradora()" 
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-3xl">
+                Cotar nesta seguradora agora
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Tailwind script configuration
+        function initTailwind() {
+            document.querySelectorAll('script[src*="tailwindcss"]').forEach(script => {
+                // Already loaded via CDN
+            });
+        }
+
+        // Mobile menu toggle
+        function initMobileMenu() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            
+            if (!btn || !menu) return;
+            
+            btn.addEventListener('click', () => {
+                if (menu.classList.contains('hidden')) {
+                    menu.classList.remove('hidden');
+                    btn.innerHTML = '<i class="fas fa-times text-xl"></i>';
+                } else {
+                    menu.classList.add('hidden');
+                    btn.innerHTML = '<i class="fas fa-bars text-xl"></i>';
+                }
+            });
+            
+            // Close mobile menu when clicking links
+            const mobileLinks = menu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    btn.innerHTML = '<i class="fas fa-bars text-xl"></i>';
+                });
+            });
+        }
+
+        // Format phone input (Brazilian mask)
+        function formatPhone(input) {
+            let value = input.value.replace(/\D/g, '');
+            
+            if (value.length > 11) value = value.substring(0, 11);
+            
+            if (value.length > 6) {
+                input.value = `(${value.substring(0, 2)}) ${value.substring(2, 7)}-${value.substring(7)}`;
+            } else if (value.length > 2) {
+                input.value = `(${value.substring(0, 2)}) ${value.substring(2)}`;
+            } else if (value.length > 0) {
+                input.value = `(${value}`;
+            }
+        }
+
+        // Scroll to form
+        function scrollToForm() {
+            const formSection = document.getElementById('cotacao');
+            if (formSection) {
+                const headerOffset = 80;
+                const elementPosition = formSection.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.scrollY - headerOffset;
+                
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+                
+                // Optional: focus first field after scroll
+                setTimeout(() => {
+                    const nomeField = document.getElementById('nome');
+                    if (nomeField) nomeField.focus();
+                }, 800);
+            }
+        }
+
+        // Select insurance type from card
+        function selectInsuranceType(type) {
+            const formSection = document.getElementById('cotacao');
+            const select = document.getElementById('tipo-seguro');
+            
+            if (!formSection || !select) return;
+            
+            // Map types
+            const typeMap = {
+                'auto': 'auto',
+                'vida': 'vida',
+                'residencial': 'residencial',
+                'empresarial': 'empresarial',
+                'viagem': 'viagem'
+            };
+            
+            const value = typeMap[type] || 'outro';
+            
+            // Scroll to form
+            const headerOffset = 80;
+            const elementPosition = formSection.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.scrollY - headerOffset;
+            
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+            
+            // Set select value after scroll
+            setTimeout(() => {
+                select.value = value;
+                select.focus();
+                
+                // Highlight effect
+                select.style.transition = 'all 0.2s';
+                select.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.2)';
+                setTimeout(() => {
+                    select.style.boxShadow = '0 0 0 3px rgba(30, 64, 175, 0.1)';
+                }, 1400);
+            }, 850);
+        }
+
+        // Testimonials data
+        const testimonials = [
+            {
+                name: "Mariana Costa",
+                role: "Empresária • São Paulo",
+                text: "A MB encontrou um seguro de vida com cobertura excelente por um preço muito justo. O atendimento foi rápido e o corretor explicou tudo com clareza. Recomendo de olhos fechados!",
+                rating: 5
+            },
+            {
+                name: "Carlos Mendes",
+                role: "Motorista de aplicativo • Rio de Janeiro",
+                text: "Meu carro foi roubado e o processo de sinistro foi extremamente rápido. Recebi o pagamento em menos de 20 dias. A equipe da MB acompanhou tudo do início ao fim.",
+                rating: 5
+            },
+            {
+                name: "Fernanda Lima",
+                role: "Médica • Belo Horizonte",
+                text: "Contratei o seguro residencial e o empresarial da minha clínica. A cotação foi personalizada e consegui economizar 28% em relação à minha antiga seguradora. Atendimento impecável.",
+                rating: 5
+            },
+            {
+                name: "Ricardo Almeida",
+                role: "Engenheiro • Curitiba",
+                text: "Viajo muito a trabalho e o seguro viagem da MB me salvou duas vezes. Cancelamento de voo e problema médico no exterior foram resolvidos com agilidade. Melhor custo-benefício que já tive.",
+                rating: 5
+            }
+        ];
+
+        let currentTestimonial = 0;
+        let carouselInterval = null;
+
+        function renderTestimonials() {
+            const track = document.getElementById('carousel-track');
+            const dotsContainer = document.getElementById('carousel-dots');
+            
+            if (!track || !dotsContainer) return;
+            
+            track.innerHTML = '';
+            dotsContainer.innerHTML = '';
+            
+            testimonials.forEach((testimonial, index) => {
+                // Create testimonial card
+                const card = document.createElement('div');
+                card.className = `testimonial-card min-w-full md:min-w-[50%] lg:min-w-[33.333%] px-4 flex-shrink-0`;
+                
+                let starsHTML = '';
+                for (let i = 0; i < testimonial.rating; i++) {
+                    starsHTML += `<i class="fas fa-star text-blue-500"></i>`;
+                }
+                
+                card.innerHTML = `
+                    <div class="bg-white border border-slate-200 p-7 rounded-3xl h-full flex flex-col">
+                        <div class="flex items-center gap-x-1 mb-4">
+                            ${starsHTML}
+                        </div>
+                        
+                        <p class="text-slate-700 text-[15px] leading-relaxed flex-grow">"${testimonial.text}"</p>
+                        
+                        <div class="flex items-center gap-x-3 mt-6 pt-6 border-t border-slate-100">
+                            <div class="w-11 h-11 rounded-full ring-1 ring-slate-200 flex items-center justify-center text-white font-bold text-sm" style="background-color: #1E40AF">
+                                ${testimonial.name.split(' ').map(n => n[0]).join('')}
+                            </div>
+                            <div>
+                                <div class="font-semibold text-slate-900">${testimonial.name}</div>
+                                <div class="text-xs text-slate-500">${testimonial.role}</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                track.appendChild(card);
+                
+                // Create dot
+                const dot = document.createElement('button');
+                dot.className = `w-2.5 h-2.5 rounded-full transition-all ${index === currentTestimonial ? 'bg-blue-600 scale-125' : 'bg-slate-300 hover:bg-slate-400'}`;
+                dot.addEventListener('click', () => {
+                    currentTestimonial = index;
+                    updateCarousel();
+                    resetCarouselInterval();
+                });
+                dotsContainer.appendChild(dot);
+            });
+            
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            const track = document.getElementById('carousel-track');
+            const dots = document.querySelectorAll('#carousel-dots button');
+            
+            if (!track) return;
+            
+            const slideWidth = track.children[0] ? track.children[0].offsetWidth : 0;
+            const translateX = -(currentTestimonial * slideWidth);
+            
+            track.style.transform = `translateX(${translateX}px)`;
+            
+            // Update dots
+            dots.forEach((dot, index) => {
+                if (index === currentTestimonial) {
+                    dot.classList.add('bg-blue-600', 'scale-125');
+                    dot.classList.remove('bg-slate-300');
+                } else {
+                    dot.classList.remove('bg-blue-600', 'scale-125');
+                    dot.classList.add('bg-slate-300');
+                }
+            });
+        }
+
+        function nextTestimonial() {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            updateCarousel();
+            resetCarouselInterval();
+        }
+
+        function prevTestimonial() {
+            currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+            updateCarousel();
+            resetCarouselInterval();
+        }
+
+        function resetCarouselInterval() {
+            if (carouselInterval) {
+                clearInterval(carouselInterval);
+            }
+            
+            carouselInterval = setInterval(() => {
+                currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+                updateCarousel();
+            }, 5500);
+        }
+
+        function initCarousel() {
+            renderTestimonials();
+            
+            // Start auto-slide
+            carouselInterval = setInterval(() => {
+                currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+                updateCarousel();
+            }, 5500);
+            
+            // Pause on hover
+            const carouselContainer = document.getElementById('testimonial-carousel');
+            if (carouselContainer) {
+                carouselContainer.addEventListener('mouseenter', () => {
+                    if (carouselInterval) clearInterval(carouselInterval);
+                });
+                
+                carouselContainer.addEventListener('mouseleave', () => {
+                    resetCarouselInterval();
+                });
+            }
+            
+            // Touch support for mobile
+            let touchStartX = 0;
+            const track = document.getElementById('carousel-track');
+            
+            if (track) {
+                track.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                    if (carouselInterval) clearInterval(carouselInterval);
+                }, { passive: true });
+                
+                track.addEventListener('touchend', (e) => {
+                    const touchEndX = e.changedTouches[0].screenX;
+                    const diff = touchStartX - touchEndX;
+                    
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) {
+                            nextTestimonial();
+                        } else {
+                            prevTestimonial();
+                        }
+                    } else {
+                        resetCarouselInterval();
+                    }
+                });
+            }
+            
+            // Resize handler for carousel
+            window.addEventListener('resize', () => {
+                updateCarousel();
+            });
+        }
+
+        // Animated stats
+        function animateStats() {
+            const stats = [
+                { id: 'stat-clients', target: 52000, suffix: '' },
+                { id: 'stat-years', target: 15, suffix: '' },
+                { id: 'stat-sinistros', target: 320, suffix: 'mi' }
+            ];
+            
+            stats.forEach(stat => {
+                const element = document.getElementById(stat.id);
+                if (!element) return;
+                
+                const start = 0;
+                const duration = 1800;
+                const startTime = performance.now();
+                
+                function update(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    
+                    // Ease out
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    const current = Math.floor(start + (stat.target - start) * eased);
+                    
+                    if (stat.id === 'stat-clients') {
+                        element.textContent = current.toLocaleString('pt-BR');
+                    } else {
+                        element.textContent = current;
+                    }
+                    
+                    if (progress < 1) {
+                        requestAnimationFrame(update);
+                    } else {
+                        if (stat.suffix) {
+                            element.textContent = current + stat.suffix;
+                        } else if (stat.id === 'stat-clients') {
+                            element.textContent = current.toLocaleString('pt-BR');
+                        }
+                    }
+                }
+                
+                requestAnimationFrame(update);
+            });
+        }
+
+        // Form submission handler
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            const form = document.getElementById('lead-form');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            
+            // Disable button and show loading
+            const originalText = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `
+                <span class="flex items-center justify-center gap-x-2">
+                    <i class="fas fa-spinner fa-spin"></i> 
+                    <span>Enviando sua cotação...</span>
+                </span>
+            `;
+            
+            // Simulate API call
+            setTimeout(() => {
+                // Hide form and show success
+                form.style.display = 'none';
+                
+                // Show success modal
+                const modal = document.getElementById('success-modal');
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                
+                // Reset form state for if user closes modal
+                setTimeout(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalText;
+                    form.style.display = 'block';
+                    form.reset();
+                }, 300);
+                
+                // Analytics simulation (in real site: send to CRM)
+                console.log('%c[LEAD] Nova cotação enviada:', 'color:#10b981', {
+                    nome: document.getElementById('nome').value,
+                    email: document.getElementById('email').value,
+                    telefone: document.getElementById('telefone').value,
+                    tipo: document.getElementById('tipo-seguro').value,
+                    mensagem: document.getElementById('mensagem').value
+                });
+                
+            }, 1450);
+        }
+
+        function closeSuccessModal() {
+            const modal = document.getElementById('success-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+            
+            // Optional: scroll to top or show thank you message
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Initialize everything
+        function initializeWebsite() {
+            initTailwind();
+            initMobileMenu();
+            initCarousel();
+            
+            // Animate stats when section is visible
+            const statsSection = document.getElementById('confianca');
+            if (statsSection) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animateStats();
+                            observer.disconnect();
+                        }
+                    });
+                }, { threshold: 0.4 });
+                
+                observer.observe(statsSection);
+            }
+            
+            // Add subtle hover effects to service cards
+            const cards = document.querySelectorAll('#servicos .card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.borderColor = '#3b82f6';
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.borderColor = '#E2E8F0';
+                });
+            });
+            
+            // Keyboard accessibility for carousel
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight') {
+                    nextTestimonial();
+                } else if (e.key === 'ArrowLeft') {
+                    prevTestimonial();
+                }
+            });
+            
+            // No external images to preload (self-contained version)
+            
+            // Console message for developers
+            console.log('%c[MB Corretora de Seguros] Site de demonstração carregado com sucesso. Pronto para produção.', 'color:#64748b; font-size: 10px');
+            
+            // Optional: Track scroll depth for CRO (demo)
+            let scrollTracked = false;
+            window.addEventListener('scroll', () => {
+                if (!scrollTracked && window.scrollY > 1200) {
+                    console.log('%c[CRO] Usuário scrollou até a seção de prova social / formulário.', 'color:#64748b');
+                    scrollTracked = true;
+                }
+            });
+            
+            // Make sure form is accessible
+            const form = document.getElementById('lead-form');
+            if (form) {
+                form.setAttribute('aria-label', 'Formulário para solicitar cotação de seguro gratuita');
+            }
+        }
+
+        // Boot the site
+        window.addEventListener('DOMContentLoaded', initializeWebsite);
+        
+        // Expose some functions globally for easy testing / future expansion
+        window.MBCorretora = {
+            scrollToForm,
+            selectInsuranceType,
+            nextTestimonial,
+            prevTestimonial,
+            openSimuladorModal
+        };
+
+        // ============================================
+        // SIMULADOR MULTI-STEP INTELIGENTE - NOVA PLATAFORMA
+        // ============================================
+        let currentStep = 1;
+        let simulatorData = {
+            insuranceType: null,
+            contact: {},
+            qualification: {},
+            preferences: []
+        };
+
+        function openSimuladorModal(preselectType = null) {
+            const modal = document.getElementById('simulador-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            
+            // Reset state
+            currentStep = 1;
+            simulatorData = { insuranceType: preselectType, contact: {}, qualification: {}, preferences: [] };
+            
+            // Show first step
+            showStep(1);
+            
+            // If preselected (from cards), skip to step 2 after brief delay
+            if (preselectType) {
+                setTimeout(() => {
+                    simulatorData.insuranceType = preselectType;
+                    showStep(2);
+                }, 600);
+            }
+        }
+
+        function closeSimuladorModal() {
+            const modal = document.getElementById('simulador-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+            
+            // Optional: save partial progress to localStorage for retomada
+            if (simulatorData.contact && simulatorData.contact.name) {
+                localStorage.setItem('mb_simulador_partial', JSON.stringify(simulatorData));
+            }
+        }
+
+        function showStep(step) {
+            // Hide all steps
+            document.querySelectorAll('.simulador-step').forEach(el => el.classList.add('hidden'));
+            
+            // Show current
+            const currentEl = document.getElementById(`step-${step}`);
+            if (currentEl) currentEl.classList.remove('hidden');
+            
+            currentStep = step;
+            updateProgress();
+            updateNavigationButtons();
+            
+            // Render dynamic content
+            if (step === 3) {
+                renderStep3();
+            }
+            if (step === 4) {
+                renderStep4();
+            }
+            if (step === 5) {
+                renderResumo();
+            }
+        }
+
+        function updateProgress() {
+            const totalSteps = 5;
+            const progress = Math.round((currentStep / totalSteps) * 100);
+            
+            const bar = document.getElementById('simulador-progress-bar');
+            const text = document.getElementById('simulador-progress-text');
+            
+            if (bar) bar.style.width = `${progress}%`;
+            if (text) text.textContent = `Etapa ${currentStep} de ${totalSteps}`;
+        }
+
+        function updateNavigationButtons() {
+            const btnVoltar = document.getElementById('btn-voltar');
+            const btnAvancar = document.getElementById('btn-avancar');
+            
+            if (!btnVoltar || !btnAvancar) return;
+            
+            // Voltar
+            if (currentStep === 1) {
+                btnVoltar.style.visibility = 'hidden';
+            } else {
+                btnVoltar.style.visibility = 'visible';
+            }
+            
+            // Avançar label
+            if (currentStep === 5) {
+                btnAvancar.style.display = 'none';
+            } else {
+                btnAvancar.style.display = 'flex';
+                btnAvancar.innerHTML = `Continuar <i class="fas fa-arrow-right ml-1"></i>`;
+            }
+        }
+
+        function nextStep() {
+            if (!validateCurrentStep()) return;
+            
+            // Save data from current step
+            saveCurrentStepData();
+            
+            // Early lead capture after step 2
+            if (currentStep === 2 && simulatorData.contact.name) {
+                sendPartialLeadToCRM();
+            }
+            
+            if (currentStep < 5) {
+                let next = currentStep + 1;
+                
+                // Skip step 3 if "nao-sei"
+                if (currentStep === 2 && simulatorData.insuranceType === 'nao-sei') {
+                    next = 4; // Go to preferences or directly to summary
+                }
+                
+                showStep(next);
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 1) {
+                showStep(currentStep - 1);
+            }
+        }
+
+        function validateCurrentStep() {
+            if (currentStep === 2) {
+                const nome = document.getElementById('sim-nome').value.trim();
+                const email = document.getElementById('sim-email').value.trim();
+                const tel = document.getElementById('sim-telefone').value.trim();
+                
+                if (!nome || !email || !tel) {
+                    alert('Por favor, preencha nome, e-mail e WhatsApp para continuar.');
+                    return false;
+                }
+                
+                // Basic email validation
+                if (!email.includes('@') || !email.includes('.')) {
+                    alert('Por favor, insira um e-mail válido.');
+                    return false;
+                }
+            }
+            
+            if (currentStep === 3) {
+                // Validation can be added per field if needed
+            }
+            
+            return true;
+        }
+
+        function saveCurrentStepData() {
+            if (currentStep === 2) {
+                simulatorData.contact = {
+                    name: document.getElementById('sim-nome').value.trim(),
+                    email: document.getElementById('sim-email').value.trim(),
+                    whatsapp: document.getElementById('sim-telefone').value.trim(),
+                    motivation: document.getElementById('sim-motivacao').value
+                };
+            }
+            
+            if (currentStep === 4) {
+                simulatorData.preferences = [];
+                document.querySelectorAll('#step4-options input:checked').forEach(cb => {
+                    simulatorData.preferences.push(cb.value);
+                });
+            }
+        }
+
+        function selectInsuranceTypeStep(type) {
+            simulatorData.insuranceType = type;
+            showStep(2);
+        }
+
+        // Render conditional Step 3
+        function renderStep3() {
+            const container = document.getElementById('step3-content');
+            const title = document.getElementById('step3-title');
+            const subtitle = document.getElementById('step3-subtitle');
+            
+            if (!container) return;
+            
+            const type = simulatorData.insuranceType;
+            let html = '';
+            
+            if (type === 'auto') {
+                title.textContent = 'Dados do seu veículo';
+                subtitle.textContent = 'Essas informações nos ajudam a comparar as melhores seguradoras para você.';
+                html = `
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-sm font-semibold mb-1.5">Marca e Modelo</label>
+                            <input type="text" id="q-veiculo-marca" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl" placeholder="Ex: Toyota Corolla">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1.5">Ano do veículo</label>
+                            <input type="number" id="q-veiculo-ano" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl" placeholder="2023" min="1990" max="2026">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1.5">Valor aproximado (R$)</label>
+                            <input type="text" id="q-veiculo-valor" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl" placeholder="85000">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1.5">Uso principal</label>
+                            <select id="q-veiculo-uso" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl">
+                                <option value="particular">Particular / Lazer</option>
+                                <option value="trabalho">Trabalho / Aplicativo</option>
+                                <option value="frota">Frota empresarial</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <label class="block text-sm font-semibold mb-1.5">CEP onde o veículo fica (para cálculo)</label>
+                        <input type="text" id="q-cep" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl" placeholder="01310-100">
+                    </div>
+                `;
+            } else if (type === 'vida') {
+                title.textContent = 'Informações para o Seguro de Vida';
+                subtitle.textContent = 'Esses dados são essenciais para calcular a melhor cobertura e preço.';
+                html = `
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-sm font-semibold mb-1.5">Sua idade</label>
+                            <input type="number" id="q-idade" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl" placeholder="35">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1.5">Profissão / Atividade</label>
+                            <input type="text" id="q-profissao" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl" placeholder="Engenheiro, médico, autônomo...">
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <label class="block text-sm font-semibold mb-1.5">Tem dependentes financeiros?</label>
+                        <div class="flex gap-4 mt-2">
+                            <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="dependentes" value="sim" class="accent-blue-600"> Sim</label>
+                            <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="dependentes" value="nao" class="accent-blue-600"> Não</label>
+                            <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="dependentes" value="parcial" class="accent-blue-600"> Parcialmente</label>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <label class="block text-sm font-semibold mb-1.5">Renda familiar aproximada (R$/mês)</label>
+                        <select id="q-renda" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl">
+                            <option value="ate5">Até R$ 5.000</option>
+                            <option value="5a10">R$ 5.000 a R$ 10.000</option>
+                            <option value="10a20">R$ 10.000 a R$ 20.000</option>
+                            <option value="acima20">Acima de R$ 20.000</option>
+                        </select>
+                    </div>
+                `;
+            } else if (type === 'empresarial') {
+                title.textContent = 'Dados da sua empresa';
+                subtitle.textContent = 'Para Seguro Empresarial, precisamos entender o porte e os riscos do negócio.';
+                html = `
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-sm font-semibold mb-1.5">Ramo de atividade</label>
+                            <input type="text" id="q-ramo" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl" placeholder="Ex: Clínica médica, comércio, indústria">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1.5">Faturamento anual aproximado</label>
+                            <select id="q-faturamento" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl">
+                                <option value="ate500k">Até R$ 500 mil</option>
+                                <option value="500k-2m">R$ 500 mil a R$ 2 milhões</option>
+                                <option value="2m-10m">R$ 2 milhões a R$ 10 milhões</option>
+                                <option value="acima10m">Acima de R$ 10 milhões</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-5 grid grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-sm font-semibold mb-1.5">Nº de funcionários</label>
+                            <input type="number" id="q-funcionarios" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl" placeholder="12">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1.5">Principais riscos</label>
+                            <select id="q-riscos" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl">
+                                <option value="incendio">Incêndio / Danos</option>
+                                <option value="rc">Responsabilidade Civil</option>
+                                <option value="cyber">Cibernético / Dados</option>
+                                <option value="todos">Múltiplos riscos</option>
+                            </select>
+                        </div>
+                    </div>
+                `;
+            } else {
+                // Default for residencial, viagem or others
+                title.textContent = 'Mais alguns detalhes rápidos';
+                subtitle.textContent = 'Ajude-nos a refinar a melhor proteção para o seu caso.';
+                html = `
+                    <div class="space-y-5">
+                        <div>
+                            <label class="block text-sm font-semibold mb-1.5">Qual o valor aproximado a proteger?</label>
+                            <input type="text" id="q-valor-geral" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl" placeholder="R$ 350.000 (imóvel, bens ou capital)">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1.5">CEP (para cálculo preciso)</label>
+                            <input type="text" id="q-cep-geral" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl" placeholder="01310-100">
+                        </div>
+                    </div>
+                `;
+            }
+            
+            container.innerHTML = html;
+        }
+
+        function renderStep4() {
+            const container = document.getElementById('step4-options');
+            if (!container) return;
+            
+            const type = simulatorData.insuranceType;
+            let options = [];
+            
+            if (type === 'auto') {
+                options = [
+                    {value: 'assistencia_24h', label: 'Assistência 24h (guincho, chaveiro)'},
+                    {value: 'roubo_furto', label: 'Roubo e Furto'},
+                    {value: 'colisao', label: 'Colisão e Danos'},
+                    {value: 'vidros', label: 'Vidros, faróis e retrovisores'},
+                    {value: 'app', label: 'Proteção para motoristas de app'}
+                ];
+            } else if (type === 'vida') {
+                options = [
+                    {value: 'morte', label: 'Indenização por morte'},
+                    {value: 'invalidez', label: 'Invalidez permanente'},
+                    {value: 'doencas_graves', label: 'Doenças graves'},
+                    {value: 'diaria', label: 'Diária por incapacidade'},
+                    {value: 'educacao', label: 'Pensão educacional'}
+                ];
+            } else {
+                options = [
+                    {value: 'basica', label: 'Cobertura básica'},
+                    {value: 'completa', label: 'Cobertura completa'},
+                    {value: 'rc', label: 'Responsabilidade civil'},
+                    {value: 'assistencia', label: 'Assistência 24h'},
+                    {value: 'premium', label: 'Opções premium / adicionais'}
+                ];
+            }
+            
+            container.innerHTML = options.map(opt => `
+                <label class="flex items-center gap-3 p-4 border border-slate-200 hover:border-blue-300 rounded-2xl cursor-pointer">
+                    <input type="checkbox" value="${opt.value}" class="accent-blue-600 w-5 h-5">
+                    <span class="text-sm">${opt.label}</span>
+                </label>
+            `).join('');
+        }
+
+        function renderResumo() {
+            const container = document.getElementById('resumo-content');
+            if (!container) return;
+            
+            const d = simulatorData;
+            let resumoHTML = `
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <div class="text-xs text-slate-500">TIPO DE SEGURO</div>
+                            <div class="font-semibold text-lg">${getInsuranceLabel(d.insuranceType)}</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-slate-500">LEAD QUALIFICADO</div>
+                            <div class="text-emerald-600 font-semibold">Nível Alto</div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t pt-4">
+                        <div class="text-xs text-slate-500 mb-1">CONTATO</div>
+                        <div><strong>${d.contact.name}</strong> — ${d.contact.whatsapp}</div>
+                        <div class="text-sm text-slate-600">${d.contact.email}</div>
+                    </div>
+            `;
+            
+            if (d.qualification && Object.keys(d.qualification).length > 0) {
+                resumoHTML += `<div class="border-t pt-4 text-sm"><strong>Detalhes informados:</strong> ${Object.values(d.qualification).filter(v => v).join(' • ')}</div>`;
+            }
+            
+            if (d.preferences && d.preferences.length > 0) {
+                resumoHTML += `<div class="border-t pt-4 text-sm"><strong>Coberturas priorizadas:</strong> ${d.preferences.join(', ')}</div>`;
+            }
+            
+            resumoHTML += `</div>`;
+            
+            container.innerHTML = resumoHTML;
+        }
+
+        function getInsuranceLabel(type) {
+            const map = {
+                'auto': 'Seguro Auto',
+                'vida': 'Seguro de Vida',
+                'residencial': 'Seguro Residencial',
+                'empresarial': 'Seguro Empresarial',
+                'viagem': 'Seguro Viagem',
+                'nao-sei': 'Recomendação Personalizada'
+            };
+            return map[type] || 'Proteção Personalizada';
+        }
+
+        function sendPartialLeadToCRM() {
+            // Simula envio imediato de lead parcial para CRM
+            const partialPayload = {
+                ...simulatorData,
+                source: 'simulador_multi_step',
+                step_completed: 2,
+                timestamp: new Date().toISOString()
+            };
+            
+            console.log('%c[MB CRM] Lead parcial capturado (Step 2):', 'color:#3b82f6', partialPayload);
+            
+            // Em produção: fetch('/api/leads', { method: 'POST', body: JSON.stringify(partialPayload) })
+            // Depois dispara automação no RD Station / HubSpot (ex: WhatsApp template + tag "simulador_iniciado")
+        }
+
+        function finalizarSimulador(action) {
+            saveCurrentStepData();
+            
+            const finalPayload = {
+                ...simulatorData,
+                source: 'simulador_multi_step',
+                step_completed: 5,
+                completion: 100,
+                action: action,
+                timestamp: new Date().toISOString(),
+                lead_score: simulatorData.insuranceType === 'empresarial' || simulatorData.insuranceType === 'vida' ? 95 : 78
+            };
+            
+            console.log('%c[MB CRM] Lead COMPLETO enviado:', 'color:#10b981', finalPayload);
+            
+            // Fecha simulador
+            closeSimuladorModal();
+            
+            if (action === 'cotacao') {
+                // Mostra sucesso normal
+                const successModal = document.getElementById('success-modal');
+                successModal.classList.remove('hidden');
+                successModal.classList.add('flex');
+            } else if (action === 'agendamento') {
+                // Abre modal de agendamento
+                setTimeout(() => {
+                    document.getElementById('agendamento-modal').classList.remove('hidden');
+                    document.getElementById('agendamento-modal').classList.add('flex');
+                }, 400);
+            }
+        }
+
+        function confirmarAgendamento() {
+            const data = document.getElementById('ag-data').value;
+            const horario = document.getElementById('ag-horario').value;
+            const especialista = document.getElementById('ag-especialista').value;
+            
+            const modal = document.getElementById('agendamento-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+            
+            // Mostra confirmação
+            const successModal = document.getElementById('success-modal');
+            successModal.querySelector('h3').textContent = 'Agendamento confirmado!';
+            successModal.querySelector('p').innerHTML = `Obrigado! Seu horário com <strong>${especialista.split('(')[0].trim()}</strong> em ${data} às ${horario} está reservado. Você receberá um e-mail de confirmação.`;
+            successModal.classList.remove('hidden');
+            successModal.classList.add('flex');
+            
+            console.log('%c[MB CRM] Agendamento criado:', 'color:#10b981', {data, horario, especialista, lead: simulatorData});
+        }
+
+        function closeAgendamentoModal() {
+            const modal = document.getElementById('agendamento-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+            // Make simulator accessible from cards
+            // Update existing selectInsuranceType to also open simulator
+            const originalSelectInsuranceType = window.selectInsuranceType || function(){};
+            window.selectInsuranceType = function(type) {
+                openSimuladorModal(type);
+            };
+
+            // ============================================
+            // MICRO-QUIZ DE RECOMENDAÇÃO
+            // ============================================
+            let quizAnswers = {};
+            const quizQuestions = [
+                {
+                    id: 'dependentes',
+                    q: 'Você tem dependentes financeiros (filhos, cônjuge, pais)?',
+                    options: [
+                        {v: 'sim', l: 'Sim, tenho dependentes'},
+                        {v: 'nao', l: 'Não'},
+                        {v: 'parcial', l: 'Parcialmente / em alguns casos'}
+                    ]
+                },
+                {
+                    id: 'patrimonio',
+                    q: 'Qual é o seu principal patrimônio a proteger?',
+                    options: [
+                        {v: 'carro', l: 'Meu carro / moto'},
+                        {v: 'casa', l: 'Minha casa ou apartamento'},
+                        {v: 'empresa', l: 'Minha empresa / negócio'},
+                        {v: 'familia', l: 'Minha família (vida e futuro)'},
+                        {v: 'viagem', l: 'Viagens frequentes'}
+                    ]
+                },
+                {
+                    id: 'risco',
+                    q: 'Qual o maior risco que te preocupa hoje?',
+                    options: [
+                        {v: 'acidente', l: 'Acidente, roubo ou danos ao bem'},
+                        {v: 'saude', l: 'Doença, invalidez ou imprevisto familiar'},
+                        {v: 'empresa', l: 'Problemas na empresa (incêndio, RC, etc.)'},
+                        {v: 'viagem', l: 'Cancelamento ou problema em viagem'}
+                    ]
+                }
+            ];
+
+            function initQuiz() {
+                const container = document.getElementById('quiz-questions');
+                if (!container) return;
+                
+                let html = '';
+                quizQuestions.forEach((q, i) => {
+                    html += `<div class="mb-6 quiz-question" data-q="${q.id}">
+                        <div class="font-semibold mb-3">${i+1}. ${q.q}</div>
+                        <div class="space-y-2">`;
+                    
+                    q.options.forEach(opt => {
+                        html += `<label class="flex items-center gap-3 p-3 bg-white border border-slate-200 hover:border-blue-300 rounded-2xl cursor-pointer">
+                            <input type="radio" name="${q.id}" value="${opt.v}" class="accent-blue-600" onchange="saveQuizAnswer('${q.id}', '${opt.v}')">
+                            <span>${opt.l}</span>
+                        </label>`;
+                    });
+                    
+                    html += `</div></div>`;
+                });
+                
+                html += `<button onclick="calcularRecomendacao()" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-3xl">Ver minha recomendação</button>`;
+                
+                container.innerHTML = html;
+            }
+
+            function saveQuizAnswer(qid, value) {
+                quizAnswers[qid] = value;
+            }
+
+            function calcularRecomendacao() {
+                const container = document.getElementById('quiz-questions');
+                const result = document.getElementById('quiz-result');
+                
+                if (Object.keys(quizAnswers).length < 3) {
+                    alert('Por favor, responda todas as 3 perguntas.');
+                    return;
+                }
+                
+                let titulo = '';
+                let desc = '';
+                
+                const { dependentes, patrimonio, risco } = quizAnswers;
+                
+                if (patrimonio === 'carro' || risco === 'acidente') {
+                    titulo = 'Seguro Auto (com possíveis adicionais)';
+                    desc = 'Proteção para o seu veículo é prioridade. Recomendamos também considerar um plano básico de Vida se você tem dependentes.';
+                } else if (patrimonio === 'familia' || dependentes === 'sim' || risco === 'saude') {
+                    titulo = 'Seguro de Vida + Residencial (combo recomendado)';
+                    desc = 'Com dependentes e preocupação com saúde/família, o combo Vida + proteção da casa oferece a melhor tranquilidade.';
+                } else if (patrimonio === 'empresa' || risco === 'empresa') {
+                    titulo = 'Seguro Empresarial (com Vida para sócios)';
+                    desc = 'Proteja seu negócio e garanta continuidade. Recomendamos também um plano de Vida para os sócios.';
+                } else if (patrimonio === 'viagem' || risco === 'viagem') {
+                    titulo = 'Seguro Viagem';
+                    desc = 'Ideal para quem viaja com frequência. Cobertura médica internacional e cancelamento são essenciais.';
+                } else {
+                    titulo = 'Combo Personalizado: Vida + Residencial';
+                    desc = 'Com base nas suas respostas, essa combinação cobre os principais riscos da sua vida atual.';
+                }
+                
+                document.getElementById('quiz-recomendacao-titulo').textContent = titulo;
+                document.getElementById('quiz-recomendacao-desc').textContent = desc;
+                
+                container.classList.add('hidden');
+                result.classList.remove('hidden');
+            }
+
+            function resetQuiz() {
+                quizAnswers = {};
+                document.getElementById('quiz-questions').classList.remove('hidden');
+                document.getElementById('quiz-result').classList.add('hidden');
+                initQuiz(); // re-render radios
+            }
+
+            function iniciarSimuladorComRecomendacao() {
+                // Fecha o quiz e abre o simulador com recomendação
+                document.getElementById('quiz-result').classList.add('hidden');
+                document.getElementById('quiz-questions').classList.remove('hidden');
+                
+                // Abre simulador e pré-seleciona baseado nas respostas
+                let preType = 'vida';
+                if (quizAnswers.patrimonio === 'carro') preType = 'auto';
+                if (quizAnswers.patrimonio === 'empresa') preType = 'empresarial';
+                if (quizAnswers.patrimonio === 'viagem') preType = 'viagem';
+                
+                openSimuladorModal(preType);
+            }
+
+            // ============================================
+            // SOCIAL PROOF TOASTS + EXIT INTENT
+            // ============================================
+            const socialProofMessages = [
+                "Maria de São Paulo acabou de economizar R$ 1.280 no Seguro Auto.",
+                "Carlos, de Curitiba, agendou consultoria para Seguro Empresarial agora.",
+                "Fernanda de BH contratou o combo Vida + Residencial e garantiu cobertura completa.",
+                "Ricardo de Recife recebeu 4 cotações e escolheu a Porto Seguro com 18% de desconto.",
+                "Juliana de Porto Alegre acabou de solicitar cotação para sua frota empresarial."
+            ];
+
+            let toastInterval = null;
+
+            function showSocialProofToast() {
+                const toastContainer = document.createElement('div');
+                toastContainer.className = `fixed bottom-6 left-6 z-[90] max-w-xs bg-white border border-slate-200 shadow-xl rounded-2xl p-4 text-sm flex gap-3 items-start`;
+                
+                const msg = socialProofMessages[Math.floor(Math.random() * socialProofMessages.length)];
+                
+                toastContainer.innerHTML = `
+                    <div class="flex-1">
+                        <div class="flex items-center gap-x-2 text-emerald-600 text-xs font-semibold mb-1">
+                            <i class="fas fa-check-circle"></i> 
+                            <span>CONVERSÃO RECENTE</span>
+                        </div>
+                        <div class="text-slate-700">${msg}</div>
+                    </div>
+                    <button onclick="this.parentElement.remove()" class="text-slate-400 hover:text-slate-600 text-lg leading-none">×</button>
+                `;
+                
+                document.body.appendChild(toastContainer);
+                
+                setTimeout(() => {
+                    if (toastContainer.parentElement) toastContainer.remove();
+                }, 6500);
+            }
+
+            function initSocialProofToasts() {
+                // Start after 25 seconds
+                setTimeout(() => {
+                    showSocialProofToast();
+                    toastInterval = setInterval(showSocialProofToast, 38000); // every ~38s
+                }, 25000);
+                
+                // Pause on hover over any toast (simple)
+                document.addEventListener('mouseover', (e) => {
+                    if (e.target.closest('.fixed.bottom-6.left-6')) {
+                        if (toastInterval) clearInterval(toastInterval);
+                    }
+                });
+            }
+
+            // Exit Intent
+            function initExitIntent() {
+                let shown = false;
+                
+                function showExitIntent() {
+                    if (shown || document.getElementById('simulador-modal').classList.contains('flex')) return;
+                    shown = true;
+                    
+                    const exitDiv = document.createElement('div');
+                    exitDiv.className = `fixed inset-0 bg-black/60 flex items-center justify-center z-[130] p-4`;
+                    exitDiv.innerHTML = `
+                        <div class="bg-white max-w-md w-full rounded-3xl p-8 text-center">
+                            <i class="fas fa-gift text-4xl text-blue-600 mb-4"></i>
+                            <h3 class="text-2xl font-bold mb-2">Espere! Antes de sair...</h3>
+                            <p class="text-slate-600 mb-6">Receba nosso Checklist de Proteção 2026 (gratuito) + uma análise personalizada das melhores condições do momento.</p>
+                            
+                            <div class="space-y-3">
+                                <input type="tel" id="exit-whatsapp" placeholder="(11) 99999-9999" class="form-input w-full px-4 py-3 border border-slate-300 rounded-2xl" oninput="formatPhone(this)">
+                                <button onclick="capturarExitIntent(this)" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3.5 rounded-3xl">
+                                    Quero meu checklist grátis agora
+                                </button>
+                            </div>
+                            
+                            <button onclick="this.closest('.fixed').remove()" class="mt-4 text-sm text-slate-500">Não, obrigado</button>
+                        </div>
+                    `;
+                    document.body.appendChild(exitDiv);
+                }
+                
+                // Desktop: mouseleave
+                document.addEventListener('mouseleave', () => {
+                    if (!shown) showExitIntent();
+                });
+                
+                // Mobile: after long inactivity (simplified)
+                let inactivityTimer;
+                function resetInactivity() {
+                    clearTimeout(inactivityTimer);
+                    inactivityTimer = setTimeout(() => {
+                        if (!shown && window.innerWidth < 768) {
+                            showExitIntent();
+                        }
+                    }, 65000); // 65 seconds of inactivity on mobile
+                }
+                
+                ['mousemove', 'touchstart', 'scroll'].forEach(evt => {
+                    document.addEventListener(evt, resetInactivity, { passive: true });
+                });
+                resetInactivity();
+            }
+
+            function capturarExitIntent(button) {
+                const input = document.getElementById('exit-whatsapp');
+                if (!input || !input.value.trim()) {
+                    alert('Por favor, informe seu WhatsApp.');
+                    return;
+                }
+                
+                const payload = {
+                    whatsapp: input.value.trim(),
+                    source: 'exit_intent',
+                    timestamp: new Date().toISOString()
+                };
+                
+                console.log('%c[MB CRM] Exit-Intent Lead capturado:', 'color:#f59e0b', payload);
+                
+                button.innerHTML = '<i class="fas fa-check"></i> Enviado! Confira seu WhatsApp';
+                button.disabled = true;
+                
+                setTimeout(() => {
+                    const modal = button.closest('.fixed');
+                    if (modal) modal.remove();
+                    
+                    // Opcional: abrir WhatsApp com mensagem automática
+                    // window.open(`https://wa.me/5511987654321?text=Olá! Recebi o checklist e quero falar sobre minha cotação.`, '_blank');
+                }, 1800);
+            }
+
+            // Initialize new features
+            function initNewPlatformFeatures() {
+                initQuiz();
+                initSocialProofToasts();
+                initExitIntent();
+                
+                // Make sure simulator can be opened from other places
+                console.log('%c[MB Plataforma] Simulador Multi-Step, Quiz, Toasts e Exit-Intent inicializados.', 'color:#64748b');
+            }
+
+            // Boot new features
+            window.addEventListener('DOMContentLoaded', () => {
+                // Already called initializeWebsite earlier
+                // Add the new platform features
+                setTimeout(initNewPlatformFeatures, 800);
+            });
+
+            // ============================================
+            // HUB DE SEGURADORAS INTERATIVO
+            // ============================================
+            const partnerData = {
+                'Porto Seguro': {
+                    advantages: 'Melhor app do mercado, assistência 24h diferenciada, rede de oficinas própria e descontos exclusivos para clientes MB.',
+                    highlight: 'Condições negociadas 12% melhores que o mercado aberto.'
+                },
+                'Allianz': {
+                    advantages: 'Excelente para Seguro de Vida e Empresarial. Forte em responsabilidade civil e cobertura internacional.',
+                    highlight: 'Ótima para perfis de alto padrão e empresas.'
+                },
+                'SulAmérica': {
+                    advantages: 'Líder em saúde e vida, com rede credenciada ampla e processo de sinistro muito ágil.',
+                    highlight: 'Recomendada para quem valoriza atendimento humanizado.'
+                },
+                'Mapfre': {
+                    advantages: 'Boa relação custo x benefício, forte em auto e residencial com muitas assistências inclusas.',
+                    highlight: 'Ideal para quem busca economia sem abrir mão de cobertura.'
+                },
+                'Azul Seguros': {
+                    advantages: 'Ótima para Seguro Viagem e auto com preços competitivos e processo 100% digital.',
+                    highlight: 'Muito usada para viagens e motoristas de app.'
+                },
+                'Bradesco Seguros': {
+                    advantages: 'Rede própria forte, boa para quem já é cliente Bradesco (integração bancária) e tem produtos completos.',
+                    highlight: 'Vantagem para quem busca integração com serviços financeiros.'
+                }
+            };
+
+            let currentPartner = null;
+
+            function showPartnerInfo(partnerName) {
+                const modal = document.getElementById('partner-modal');
+                const nameEl = document.getElementById('partner-name');
+                const contentEl = document.getElementById('partner-content');
+                
+                const data = partnerData[partnerName] || { advantages: 'Seguradora parceira de confiança da MB.', highlight: 'Condições exclusivas negociadas pela MB.' };
+                
+                nameEl.textContent = partnerName;
+                contentEl.innerHTML = `
+                    <div>
+                        <div class="font-semibold text-slate-900 mb-1">Principais vantagens:</div>
+                        <p>${data.advantages}</p>
+                    </div>
+                    <div class="bg-blue-50 p-3 rounded-2xl text-blue-700 text-sm">
+                        <strong>Exclusivo MB:</strong> ${data.highlight}
+                    </div>
+                `;
+                
+                currentPartner = partnerName;
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
+
+            function closePartnerModal() {
+                const modal = document.getElementById('partner-modal');
+                modal.classList.remove('flex');
+                modal.classList.add('hidden');
+            }
+
+            function cotarComSeguradora() {
+                closePartnerModal();
+                // Abre o simulador com preferência pela seguradora
+                setTimeout(() => {
+                    openSimuladorModal();
+                    // Opcional: mostrar toast "Pré-selecionando ${currentPartner}"
+                }, 300);
+            }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a06bd081fd1d784c',t:'MTc4MDYyNzI0Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
